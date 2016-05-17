@@ -70,9 +70,6 @@ li:hover {
     background: #ffffff;
     float: left;
     margin-left: 60px;
-    /*position: absolute;
-    bottom: 420px;
-    left: 800px;*/
 }
 
 #frame .content{
@@ -82,72 +79,6 @@ li:hover {
     display: block;
     background: #ffffff;
     float: left;
-    /*position: absolute;
-    left: 200px;
-    bottom: 200px;*/
-}
-
-
-#contactfull {
-    height:550px;
-    width: 100%;
-    background-image: url("../images/concrete_seamless.png");
-    background-size: all;
-    background-attachment: scroll;
-}
-
-#contactright{
-    box-shadow: 0 4px 8px 0 rgba(74, 170, 165, 1), 0 6px 20px 0 rgba(74, 170, 165, 1);
-    padding-top: 20px;
-    height: 180px;
-    width: 260px;
-    display: inline;
-    background: #ffffff;
-    /*position: absolute;
-    bottom: 390px;
-    left: 800px;*/
-}
-
-#contactleft{
-    box-shadow: 0 4px 8px 0 rgba(74, 170, 165, 1), 0 6px 20px 0 rgba(74, 170, 165, 1);
-    height: 460px;
-    width: 500px;
-    display: inline;
-    background: #ffffff;
-   /*position: absolute;
-    left: 200px;
-    bottom: 110px;*/
-}
-
-#portfoliofull {
-    height:700px;
-    width: 100%;
-    background-image: url("../images/concrete_seamless.png");
-    background-size: all;
-    background-attachment: scroll;
-}
-
-#portfolioleft{
-    box-shadow: 0 4px 8px 0 rgba(74, 170, 165, 1), 0 6px 20px 0 rgba(74, 170, 165, 1);
-    height: 630px;
-    width: 480px;
-    display: inline;
-    background: #ffffff;
-    /*position: absolute;
-    left: 200px;
-    bottom: 90px;*/
-}
-
-#portfolioright{
-    box-shadow: 0 4px 8px 0 rgba(74, 170, 165, 1), 0 6px 20px 0 rgba(74, 170, 165, 1);
-    padding-top: 20px;
-    height: 180px;
-    width: 260px;
-    display: inline;
-    background: #ffffff;
-    /*position: absolute;
-    bottom: 540px;
-    left: 800px;*/
 }
 
 header {
@@ -395,11 +326,16 @@ li{
     .container {
         width: 100%;
         margin: 0 auto;
+        }
+
+    #frame .content, #frame .sidebar {
+        width: 100%;
+        margin: 0;
     }
-#frame .content, #frame .sidebar {
-    width: 100%;
-    margin: 0;
-}
+    #frame .sidebar {
+        margin-top: 20px;
+    }
+
     #list{
         width: 100% auto;
         float: right;
@@ -410,16 +346,7 @@ li{
         float: left;
         margin: 0;
     }
-    #indexleft, #indexright{
-        width: 100%;
-        height: 100%;
-        position: static;
-        display: inline-block;
-        float: none;
-    }
-    #indexleft{
-        margin-top: 20px;
-    }
+    
 }
 
 @media screen and (max-width: 768px){
@@ -435,21 +362,12 @@ li{
         float: left;
     }
 
-
-    #indexfull{
-        height: 100%;
+    #frame .content, #frame .sidebar {
         width: 100%;
-        padding: 20px;
+        margin: 0;
     }
-    #indexleft, #indexright{
-        width: 100%;
-        height: 100%;
-        position: static;
-        display: inline-block;
-        float: none;
-        
-    }
-     #indexright{
+    
+    #frame .sidebar {
         margin-top: 20px;
     }
 }
@@ -504,11 +422,12 @@ li{
         margin-bottom:20px;
     }
 
-
-    #indexleft, #indexright{
+    #frame .content, #frame .sidebar {
         width: 100%;
-        position: fixed; 
-        margin-bottom: 20px;  
+        margin: 0;
+    }
+    #frame .sidebar {
+        margin-top: 20px;
     }
 
 }
