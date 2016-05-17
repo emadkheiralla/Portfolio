@@ -1,0 +1,122 @@
+@media screen and (max-width: 980px){
+    
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+#frame .content, #frame .sidebar {
+    width: 100%;
+    margin: 0;
+}
+    #list{
+        width: 100% auto;
+        float: right;
+        margin: 0;
+    }
+
+    #name{
+        float: left;
+        margin: 0;
+    }
+    #indexleft, #indexright{
+        width: 100%;
+        height: 100%;
+        position: static;
+        display: inline-block;
+        float: none;
+    }
+    #indexleft{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    #list{
+        float: right;
+        padding-right: 50px;
+        
+    }
+
+    #name{
+        margin-left: 20px;
+        float: left;
+    }
+
+
+    #indexfull{
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+    #indexleft, #indexright{
+        width: 100%;
+        height: 100%;
+        position: static;
+        display: inline-block;
+        float: none;
+        
+    }
+     #indexright{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 640px){
+
+    body{
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+
+    #name{
+        margin: 0;
+        display: block;
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    #list{
+        display: inline;
+        background-color: #ffffff;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .divider-vertical-second-menu{
+        margin: 0;
+        padding: 0;
+    }
+
+    ul{
+        padding:0;
+    }
+
+    li{
+        float: none;
+        padding: 20px 40px 20px 40px;
+        margin-bottom: 0;
+    }
+    .divider-vertical-second-menu{
+        margin: 0;
+        padding: 0;
+    }
+
+    #me2{
+        width: 100%;
+        background-size: cover;
+        margin-bottom:20px;
+    }
+
+
+    #indexleft, #indexright{
+        width: 100%;
+        position: fixed; 
+        margin-bottom: 20px;  
+    }
+
+}
